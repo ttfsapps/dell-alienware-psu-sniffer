@@ -1,4 +1,4 @@
-Onewire Sniffer for Dell PSU's
+# Onewire Sniffer for Dell PSU's
 
 Displays Dell ID sring in hex and ASCII
 
@@ -8,24 +8,21 @@ Version 0.0   initial release
 
 Version 0.1   serial port only enabled for debug - reliability
 
-Dell Power Adapter PCB Header Pins and Barrel Connector
+## Dell Power Adapter Barrel Connector and dell_psu_spoofer.kicad_pcb pin numbers
 
-  P1 inner barrel: +19.5 VDC
+>|PCB Header J2 Pin No.|Dell/Alienware PSU Plug|
+>|:-----:|:-----:|
+>|P1|inner barrel: +19.5 VDC|
+>|P2|center pin: id|
+>|P3|outer shell: gnd|
 
-  P2 center pin: id 
+## Sniffer and Dell PSU Spoofer Pins
 
-  P3 outer shell: gnd
-
-Sniffer and Dell PSU Spoofer Pins
-
-  Sniffer                 Spoofer
-
-  ATmega Pin              ATTiny85 Pin
-
-  22  --------------->    <-------- PB2 onewire
-
-  GND --------------->    <-------- GND
-
-  not used ----------X    <-------- 19.5 VDC
+>|Sniffer|Spoofer|
+>|:--------------:|:-------------------:|
+>|**ATmega Pin**|**Dell/Alienware Plug**|   
+>|22|center pin: id|
+>|gnd|outer shell: gnd|
+>|not used|inner barrel: +19.5 VDC|
 
 TTFS Apps 2026
