@@ -20,7 +20,7 @@ Version 0.1   serial port only enabled for debug - reliability
 
 >|Sniffer|Spoofer|
 >|:--------------:|:-------------------:|
->|**ATmega Pin**|**Dell/Alienware Plug**|   
+>|**Arduino Mega Pin**|**Dell/Alienware Plug**|   
 >|22|center pin: id|
 >|gnd|outer shell: gnd|
 >|not used|inner barrel: +19.5 VDC|
