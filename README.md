@@ -13,24 +13,24 @@ Tested on Arduino Mega 2560 / Elegoo 2.8" TFT Color Display Shield with dell_psu
 
 ## Arduino Mega and Dell PSU Connectors
 
->|Function|Arduino Mega Pin|Dell/Alienware Plug|
->|:--------------:|:-------------------:|:-------------------:|
->|id|22|center pin|
->|gnd|gnd|outer shell|
->|+19.5 VDC|not used|inner barrel|
+|Function|Arduino Mega Pin|Dell/Alienware Plug|
+|:--------------:|:-------------------:|:-------------------:|
+|id|22|center pin|
+|gnd|gnd|outer shell|
+|+19.5 VDC|not used|inner barrel|
 
 ## Decoding the Dell PSU ID String
 
 The ID string is 40 characters long and contains wattage, voltage, and current specs for the PSU. 
  
->DELL00ACWWWVVVIIICN0123456789ABCDEA05
+Example: DELL00ACWWWVVVIIICN0123456789ABCDEA05
 
->|Field|Value|Units|
->|:-----:|:-----:|:-----:|
->|Header|DEL00AC||
->|Wattage|WWW|Watts|
->|Voltage|VVV|Volts*10|
->|Current|III|Amps*10|
->|Serial No.|CN...A05||
+|Field|Value|Units|
+|:-----:|:-----:|:-----:|
+|Header|DEL00AC||
+|Wattage|WWW|Watts|
+|Voltage|VVV|Volts*10|
+|Current|III|Amps*10|
+|Serial No.|CN...A05||
 
 TTFS Apps 2026
