@@ -2,7 +2,7 @@
 
 Allows the user to read the ID string supplied by the PSU to the Dell/Alienware notebook pc.
 
-Dell/Alienwares read the ASCII string sent via the center pin of a genuine Dell/Alienware PSU and adjust their performance accordingly.Lack of an ID string will result in speed throtling and poor performance. 
+Dell/Alienwares read the ASCII string sent via the center pin of a genuine Dell/Alienware PSU and adjust their performance accordingly. Lack of an ID string will result in speed throtling and poor performance. 
 The sniffer uses OneWire.h to communicate with and read the PSU's DS2502 ROM, which stores the Dell ID string, using Onewire protocol. The entire string is displayed in ASCII and hex for inspection and diagnosis.
 
 Tested on Arduino Mega 2560 / Elegoo 2.8" TFT Color Display Shield with dell_psu_spoofer.
